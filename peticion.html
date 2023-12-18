@@ -1,3 +1,108 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>💗</title>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300;400;500&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+			html,
+			body {
+                background: rgba(99,61,219,1);
+                background-image: linear-gradient(90deg, rgba(147,113,255,1) 0%, rgba(99,61,219,1) 50%);
+				margin: 0;
+				padding: 0;
+			}
+
+			.container {
+				display: flex;
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				flex-flow: column nowrap;
+				align-items: center;
+				justify-content: center;
+				background: linear-gradient(
+					90deg,
+					rgba(147, 113, 255, 1) 0%,
+					rgba(99, 61, 219, 1) 50%
+				);
+			}
+
+			.container .title {
+				font-size: 60px;
+				font-family: 'Oswald';
+				-webkit-text-fill-color: transparent;
+				-webkit-text-stroke: 2px white;
+				text-shadow: 0 0 1em white;
+                text-align: center;
+			}
+
+			.container .buttons {
+				margin-top: 50px;
+				margin-left: -130px;
+			}
+
+			.container .buttons .btn {
+				position: absolute;
+				padding: 10px 20px;
+				font-size: 18px;
+				background-color: #7f0000;
+				border-radius: 5px;
+				border: 2px solid white;
+				box-shadow: 0 0 1em white;
+				background: none;
+				color: white;
+				transition: 0.1s;
+				cursor: pointer;
+			}
+
+			.container .buttons > #btnno {
+				margin-left: 70px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="title">Quieres ser mi novia?</div>
+
+			<div class="buttons">
+				<button id="btnyes" class="btn">Si</button>
+				<button id="btnno" class="btn">No</button>
+			</div>
+		</div>
+		<script>
+			var btnno = document.getElementById('btnno');
+			var btnyes = document.getElementById('btnyes');
+            let isLoged = localStorage.getItem('isloged');
+			if(isLoged == 'false' || isLoged == null){
+				window.location.href = 'index.html';
+			}
+			btnno.addEventListener('mouseenter', () => {
+				console.log('mouse entrando');
+				var pos = coordenadas();
+				btnno.style.top = `${pos.posy}px`;
+				btnno.style.left = `${pos.posx}px`;
+			});
+
+			var coordenadas = () => {
+				var ancho = screen.width - 100;
+				var alto = screen.height - 200;
+				var posx = Math.random() * (ancho);
+				var posy = Math.random() * (alto);
+				return { posx, posy };
+			};
+
+			btnyes.addEventListener('click', () => {
+				alert('Ya sabia que, ahora sí, querias ser mi novia 💖');
+			});
+		</script>
+	</body>
+</html>
+=======
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -100,3 +205,4 @@
 		</script>
 	</body>
 </html>
+>>>>>>> 8787036dcd3a5e500b2a3e04fb025dda7217d6d7
