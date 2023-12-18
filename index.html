@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Moments</title>
+		<title>Autenticación</title>
 		<link rel="stylesheet" href="main.css" />
 		<link
 			rel="stylesheet"
@@ -12,6 +12,12 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
+		<link rel="shortcut icon" href="./img/icon.svg" type="image/x-icon" />
+		<style>
+			#navbar h1 {
+				display: none;
+			}
+		</style>
 	</head>
 	<body>
 		<div id="navbar">
@@ -28,21 +34,25 @@
 						no puedes ver nada sin un usuario y una contraseña jeje
 					</h3>
 					<div action="" id="form">
-                        <label for="user" class="icn user"><i class="fa-solid fa-user"></i></label>
+						<label for="user" class="icn user"
+							><i class="fa-solid fa-user"></i
+						></label>
 
-						<input type="text" name="user" id="user"/>
+						<input type="text" name="user" id="user" />
 
-                        <label for="pswrd" class="icn pswrd"><i class="fa-solid fa-key"></i></label>
+						<label for="pswrd" class="icn pswrd"
+							><i class="fa-solid fa-key"></i
+						></label>
 
-						<input type="password" name="pswrd"  id="pswrd" placeHolder/>
+						<input type="password" name="pswrd" id="pswrd" placeholder />
 						<button class="btn" id="submit">Entrar »</button>
-                    </div>
+					</div>
 				</div>
 			</div>
 		</div>
-		<script src="script.js">
-			
+		<script src="script.js"></script>
+		<script>
+			localStorage.setItem('isloged', 'false');
 		</script>
-		<script>localStorage.setItem('isloged', 'false');</script>
 	</body>
 </html>

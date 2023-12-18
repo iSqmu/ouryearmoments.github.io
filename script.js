@@ -1,12 +1,8 @@
 let submit = document.querySelector('#submit');
 let users = [
 	{
-		user: 'admin',
-		pswrd: 'admin',
-	},
-	{
-		user: 'user',
-		pswrd: 'user',
+		user: 'sqmu',
+		pswrd: 'Secret210508',
 	},
 ];
 let username;
