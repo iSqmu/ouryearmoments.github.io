@@ -3,8 +3,9 @@ let users = [
 	{
 		user: 'sqmu',
 		pswrd: 'Secret210508',
-	},
+	}
 ];
+
 let username;
 let password;
 let successA = false;
