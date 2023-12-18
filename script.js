@@ -55,3 +55,16 @@ submit.addEventListener('click', function () {
 		localStorage.setItem('isloged', 'false');
 	}
 });
+
+let show = document.querySelector('.btn-show');
+
+show.addEventListener('click', function () {
+	if (pswrd.type == 'password') {
+		pswrd.type = 'text';
+		show.innerHTML = '<i class="fa-solid fa-eye"></i>';
+	} else {
+		pswrd.type = 'password';
+		show.innerHTML = '<i class="fa-solid fa-eye-slash"></i>';
+	}
+})
+

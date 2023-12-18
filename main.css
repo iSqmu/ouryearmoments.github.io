@@ -199,7 +199,7 @@ background-image:  repeating-linear-gradient(0deg, #000000, #000000 1px, #ffffff
 .icn {
     color: #633DDB;
     position: relative;
-    top: 25px;
+    top: 20px;
     left: -135px;
     width: 20px;
     height: 20px;
@@ -217,6 +217,7 @@ background-image:  repeating-linear-gradient(0deg, #000000, #000000 1px, #ffffff
     border: 2px solid #633DDB;
     margin-top: 30px;
     transition: .5s;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -226,10 +227,17 @@ background-image:  repeating-linear-gradient(0deg, #000000, #000000 1px, #ffffff
     
 }
 
+.btn-show {
+    width: 25px;
+    height: 30px;
+    background: none;
+    border: none;
+    color: #633DDB;
+    position: relative;
+    top: -74px;
+    left: 135px;
+    cursor: pointer;
 
-
-.hidden {
-    display: none;
 }
 
 /* background: linear-gradient(90deg, rgba(147,113,255,1) 0%, rgba(99,61,219,1) 50%); */
@@ -267,5 +275,9 @@ background-image:  repeating-linear-gradient(0deg, #000000, #000000 1px, #ffffff
 
     .icn {
         left: -85px;
+    }
+
+    .btn-show {
+        left: 85px; 
     }
 }
