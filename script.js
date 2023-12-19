@@ -3,6 +3,14 @@ let users = [
 	{
 		user: 'sqmu',
 		pswrd: 'Secret210508',
+	},
+	{
+		user: 'prettiestGirl',
+		pswrd: 'itsYuli',
+	},
+	{
+		user: 'moments',
+		pswrd: '181223',
 	}
 ];
 
